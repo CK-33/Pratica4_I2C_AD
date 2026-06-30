@@ -115,12 +115,7 @@ Estrutura `while(true)` com taxa de amostragem definida por um atraso de 500 ms 
 
 Clone o repositório, acesse a pasta do projeto e execute:
 
-```bash
-mkdir build
-cd build
-cmake ..
-make
-```
+mkdir build, cd build, cmake .., make
 
 O arquivo `.uf2` gerado estará disponível na pasta `build/`.
 
