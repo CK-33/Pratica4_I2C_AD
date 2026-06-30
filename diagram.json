@@ -1,0 +1,21 @@
+
+
+{
+  "version": 1,
+  "author": "Equipe UNIVASF",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "board-ssd1306", "id": "oled", "top": -90, "left": 180, "attrs": {} },
+    { "type": "wokwi-analog-joystick", "id": "joy", "top": 90, "left": 180, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP14", "oled:SDA", "green", [ "v0" ] ],
+    [ "pico:GP15", "oled:SCL", "green", [ "v0" ] ],
+    [ "pico:3V3", "oled:VCC", "red", [ "v0" ] ],
+    [ "pico:GND", "oled:GND", "black", [ "v0" ] ],
+    [ "pico:GP26", "joy:HORZ", "blue", [ "v0" ] ],
+    [ "pico:3V3", "joy:VCC", "red", [ "v0" ] ],
+    [ "pico:GND", "joy:GND", "black", [ "v0" ] ]
+  ]
+}
